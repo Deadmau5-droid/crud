@@ -22,7 +22,7 @@ export class Student {
     Comp_Science: number
 
     @ManyToMany(() => Class)
-    @JoinTable({ name: "UserLocation"})
+    @JoinTable({ name: "Class"})
     public locations:Class[]
   
 }
