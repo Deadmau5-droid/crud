@@ -23,6 +23,6 @@ export class Student {
 
     @ManyToMany(() => Class)
     @JoinTable({ name: "Class"})
-    public locations:Class[]
+    public Class:Class[]
   
 }

@@ -4,9 +4,9 @@ import { AppService } from './app.service';
 import {TypeOrmModule} from '@nestjs/typeorm';
 import { StudentModule } from './student/student.module';
 import { ClassModule } from './class/class.module';
-
+import config from 'ormConfig';
 @Module({
-  imports: [TypeOrmModule.forRoot(), StudentModule, ClassModule],
+  imports: [TypeOrmModule.forRoot(config), StudentModule, ClassModule],
   controllers: [AppController],
   providers: [AppService],
 })
